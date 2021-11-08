@@ -19,12 +19,20 @@ app.get('/', (req, res) => {
   sendFile('index.html', res)
 });
 
+app.get('/t', (req, res) => {
+  sendFile('test.html', res)
+});
+
 app.get('/home', (req, res) => {
   sendFile('index.html', res)
 });
 
-app.get('/contact', (req, res) => {
-  sendFile('contact.html', res)
+app.get('/register', (req, res) => {
+  sendFile('register.html', res)
+});
+
+app.get('/login', (req, res) => {
+  sendFile('login.html', res)
 });
 
 app.get('/style.css', (req, res) => {
